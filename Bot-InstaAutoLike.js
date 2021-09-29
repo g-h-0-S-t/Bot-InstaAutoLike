@@ -13,5 +13,5 @@
             }
         },1000)
     };
-    setInterval(likeAndNext, 5000);
+    setInterval(likeAndNext, 10000);
 })();
