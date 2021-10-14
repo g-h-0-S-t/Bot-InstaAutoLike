@@ -46,6 +46,9 @@
                     window.location.reload(true);
                 }
             }
+            if (document.querySelector('.aOOlW.HoLwm ')) {
+                document.querySelector('.aOOlW.HoLwm ').click();
+            }
         }, 1000);
         setTimeout(likeAndNext, 1000);
     };
