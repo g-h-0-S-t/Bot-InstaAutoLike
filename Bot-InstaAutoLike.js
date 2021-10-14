@@ -46,9 +46,8 @@
                 window.location.reload(true);
             }
             else {
-                likeAndNext();
+                setTimeout(likeAndNext, 3000);
             }
         }, 1000)
     };
-    setInterval(likeAndNext, 3000);
 })();
