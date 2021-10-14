@@ -45,9 +45,7 @@
             else if (!document.querySelector('.coreSpriteRightPaginationArrow')) {
                 window.location.reload(true);
             }
-            else {
-                setTimeout(likeAndNext, 3000);
-            }
-        }, 1000)
+        }, 1000);
+        setTimeout(likeAndNext, 3000);
     };
 })();
