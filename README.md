@@ -1,3 +1,5 @@
+<img src="https://freepngimg.com/thumb/terminator/21148-9-terminator-picture.png" width="200" />  
+
 # Bot-InstaAutoLike
 A Javascript Bot to Auto Like all pictures in an Instagram profile.  
 It bypasses Instagram spam protection and keeps retrying upon encountering the limits (limits of like frequency / limits of likes).  
