@@ -48,4 +48,5 @@
         }, 1000);
         setTimeout(likeAndNext, 3000);
     };
+    likeAndNext();
 })();
