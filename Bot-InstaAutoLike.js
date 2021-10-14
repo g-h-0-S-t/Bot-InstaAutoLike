@@ -25,15 +25,28 @@
 (function () {
     document.querySelector('.v1Nh3.kIKUG._bz0w > a').click();
     var likeAndNext = function () {
-        if (document.querySelector('[aria-label="Like"]') && document.querySelector('[aria-label="Like"]').parentNode && document.querySelector('[aria-label="Like"]').parentNode.parentNode && document.querySelector('[aria-label="Like"]').parentNode.parentNode.parentNode && document.querySelector('[aria-label="Like"]').parentNode.parentNode.parentNode.className === 'fr66n') {
+        if (document.querySelector('[aria-label="Like"]') &&
+            document.querySelector('[aria-label="Like"]').parentNode &&
+            document.querySelector('[aria-label="Like"]').parentNode.parentNode &&
+            document.querySelector('[aria-label="Like"]').parentNode.parentNode.parentNode &&
+            document.querySelector('[aria-label="Like"]').parentNode.parentNode.parentNode.className === 'fr66n') {
             document.querySelector('[aria-label="Like"]').parentNode.parentNode.click();
         }
         setTimeout(function () {
-            if (document.querySelector('.coreSpriteRightPaginationArrow')) {
+            if (document.querySelector('[aria-label="Unlike"]') &&
+                document.querySelector('[aria-label="Unlike"]').parentNode &&
+                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode &&
+                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode &&
+                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode &&
+                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode.className === 'fr66n' &&
+                document.querySelector('.coreSpriteRightPaginationArrow')) {
                 document.querySelector('.coreSpriteRightPaginationArrow').click();
             }
-            else {
+            else if (!document.querySelector('.coreSpriteRightPaginationArrow')) {
                 window.location.reload(true);
+            }
+            else {
+                likeAndNext();
             }
         }, 1000)
     };
