@@ -38,18 +38,13 @@
                 document.querySelector('[aria-label="Unlike"]').parentNode.parentNode &&
                 document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode &&
                 document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode &&
-                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode.className === 'fr66n' &&
-                document.querySelector('.coreSpriteRightPaginationArrow')) {
-                document.querySelector('.coreSpriteRightPaginationArrow').click();
-            }
-            else if (document.querySelector('[aria-label="Unlike"]') &&
-                document.querySelector('[aria-label="Unlike"]').parentNode &&
-                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode &&
-                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode &&
-                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode &&
-                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode.className === 'fr66n' && 
-                !document.querySelector('.coreSpriteRightPaginationArrow')) {
-                window.location.reload(true);
+                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode.className === 'fr66n') {
+                if (document.querySelector('.coreSpriteRightPaginationArrow')) {
+                    document.querySelector('.coreSpriteRightPaginationArrow').click();
+                }
+                else {
+                    window.location.reload(true);
+                }
             }
         }, 1000);
         setTimeout(likeAndNext, 1000);
