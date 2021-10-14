@@ -11,3 +11,6 @@ It bypasses Instagram spam protection and keeps retrying upon encountering the l
 After liking all the pics, it just refreshes the page.  
 
 That's all folks!
+
+**CAUTION :** More than 2 hours of continuous usage will give you a **'suspicious activity message' from Instagram** where you'll be asked to **reset your password**.  
+Give breaks while using it, if you do not want to be forced to reset you password.
