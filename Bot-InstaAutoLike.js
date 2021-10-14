@@ -52,7 +52,7 @@
                 window.location.reload(true);
             }
         }, 1000);
-        setTimeout(likeAndNext, 3000);
+        setTimeout(likeAndNext, 1000);
     };
     likeAndNext();
 })();
