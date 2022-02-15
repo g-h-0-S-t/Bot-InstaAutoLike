@@ -46,7 +46,7 @@ javascript:
                         document.querySelector('svg[aria-label="Next"]').closest('button').click();
                     }
                 } catch {
-                    document.querySelectorAll('a[class="sqdOP yWX7d     _8A5w5   ZIAjV "]')[0].click();
+                    document.querySelector('[aria-label="Close"]').closest('button').click()
                 }
 
             }
