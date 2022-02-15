@@ -27,33 +27,34 @@ javascript:
 (function() {
     document.querySelector('.v1Nh3.kIKUG._bz0w > a').click();
     var likeAndNext = function() {
-        try {
-            if (document.querySelector('[aria-label="Like"]') &&
-                document.querySelector('[aria-label="Like"]').parentNode &&
-                document.querySelector('[aria-label="Like"]').parentNode.parentNode &&
-                document.querySelector('[aria-label="Like"]').parentNode.parentNode.parentNode &&
-                document.querySelector('[aria-label="Like"]').parentNode.parentNode.parentNode.className === 'fr66n') {
-                document.querySelector('[aria-label="Like"]').parentNode.parentNode.click();
-            }
-            setTimeout(function() {
-                if (document.querySelector('[aria-label="Unlike"]') &&
-                    document.querySelector('[aria-label="Unlike"]').parentNode &&
-                    document.querySelector('[aria-label="Unlike"]').parentNode.parentNode &&
-                    document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode &&
-                    document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode &&
-                    document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode.className === 'fr66n') {
+        if (document.querySelector('[aria-label="Like"]') &&
+            document.querySelector('[aria-label="Like"]').parentNode &&
+            document.querySelector('[aria-label="Like"]').parentNode.parentNode &&
+            document.querySelector('[aria-label="Like"]').parentNode.parentNode.parentNode &&
+            document.querySelector('[aria-label="Like"]').parentNode.parentNode.parentNode.className === 'fr66n') {
+            document.querySelector('[aria-label="Like"]').parentNode.parentNode.click();
+        }
+        setTimeout(function() {
+            if (document.querySelector('[aria-label="Unlike"]') &&
+                document.querySelector('[aria-label="Unlike"]').parentNode &&
+                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode &&
+                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode &&
+                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode &&
+                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode.className === 'fr66n') {
+                try {
                     if (document.querySelector('svg[aria-label="Next"]').closest('button')) {
                         document.querySelector('svg[aria-label="Next"]').closest('button').click();
                     }
+                } catch {
+                    document.querySelectorAll('a[class="sqdOP yWX7d     _8A5w5   ZIAjV "]')[0].click();
                 }
-                /** click like button */
-                if (document.querySelectorAll('svg[aria-label="Like"][class="_8-yf5 "]')[1]) {
-                    document.querySelectorAll('svg[aria-label="Like"][class="_8-yf5 "]')[1].closest('button').click();
-                }
-            }, 1000);
-        } catch {
-            document.querySelectorAll('a[class="sqdOP yWX7d     _8A5w5   ZIAjV "]')[0].click();
-        }
+
+            }
+            /** click like button */
+            if (document.querySelectorAll('svg[aria-label="Like"][class="_8-yf5 "]')[1]) {
+                document.querySelectorAll('svg[aria-label="Like"][class="_8-yf5 "]')[1].closest('button').click();
+            }
+        }, 1000);
         setTimeout(likeAndNext, 1000);
     };
     likeAndNext();
