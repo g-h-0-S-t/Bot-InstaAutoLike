@@ -51,10 +51,10 @@ javascript:
                     document.querySelectorAll('svg[aria-label="Like"][class="_8-yf5 "]')[1].closest('button').click();
                 }
             }, 1000);
-            setTimeout(likeAndNext, 1000);
         } catch {
             document.querySelectorAll('a[class="sqdOP yWX7d     _8A5w5   ZIAjV "]')[0].click();
         }
+        setTimeout(likeAndNext, 1000);
     };
     likeAndNext();
 })();
