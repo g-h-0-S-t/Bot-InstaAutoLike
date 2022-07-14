@@ -39,6 +39,8 @@ javascript:
     let close = () => {
         if (document.querySelector('[aria-label="Close"]') && !document.querySelector('[aria-label="Next"]')) {
             document.querySelector('[aria-label="Close"]').closest('div').click();
+            let href = window.location.href;
+            window.location.href = href + '#';
         }
     };
     let alreadyLiked = () => document.querySelector('._aamu._aat0 [aria-label="Unlike"]');
