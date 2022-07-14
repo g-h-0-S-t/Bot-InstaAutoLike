@@ -1,6 +1,6 @@
 javascript:
 
-    'use strict';
+'use strict';
 
 /* MIT License
  * 
@@ -24,35 +24,33 @@ javascript:
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE. */
 
-(function() {
-    document.querySelector('.v1Nh3.kIKUG._bz0w > a').click();
-    var likeAndNext = function() {
-        if (document.querySelector('[aria-label="Like"]') &&
-            document.querySelector('[aria-label="Like"]').parentNode &&
-            document.querySelector('[aria-label="Like"]').parentNode.parentNode &&
-            document.querySelector('[aria-label="Like"]').parentNode.parentNode.parentNode &&
-            document.querySelector('[aria-label="Like"]').parentNode.parentNode.parentNode.className === 'fr66n') {
-            document.querySelector('[aria-label="Like"]').parentNode.parentNode.click();
+(() => {
+    document.querySelector('._aagw').click();
+    let like = () => {
+        if (document.querySelector('._aamu._aat0 [aria-label="Like"]')) {
+            document.querySelector('._aamu._aat0 [aria-label="Like"]').closest('button').click();
         }
-        setTimeout(function() {
-            if (document.querySelector('[aria-label="Unlike"]') &&
-                document.querySelector('[aria-label="Unlike"]').parentNode &&
-                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode &&
-                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode &&
-                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode &&
-                document.querySelector('[aria-label="Unlike"]').parentNode.parentNode.parentNode.parentNode.className === 'fr66n') {
+    };
+    let next = () => {
+        if (document.querySelectorAll('[aria-label="Next"]')[1]) {
+            document.querySelectorAll('[aria-label="Next"]')[1].closest('button').click();
+        }
+    };
+    let close = () => {
+        document.querySelector('[aria-label="Close"]').closest('button').click();
+    };
+    let likeAndNext = () => {
+        like();
+        setTimeout(function () {
+            if (document.querySelector('._aamu._aat0 [aria-label="Unlike"]')) {
                 try {
-                    if (document.querySelector('svg[aria-label="Next"]').closest('button')) {
-                        document.querySelector('svg[aria-label="Next"]').closest('button').click();
-                    }
+                    next();
                 } catch {
-                    document.querySelector('[aria-label="Close"]').closest('button').click()
+                    close();
                 }
 
-            }
-            /** click like button */
-            if (document.querySelectorAll('svg[aria-label="Like"][class="_8-yf5 "]')[1]) {
-                document.querySelectorAll('svg[aria-label="Like"][class="_8-yf5 "]')[1].closest('button').click();
+            } else {
+                like();
             }
         }, 1000);
         setTimeout(likeAndNext, 1000);
