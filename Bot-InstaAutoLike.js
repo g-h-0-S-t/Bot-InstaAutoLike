@@ -39,10 +39,11 @@ javascript:
     let close = () => {
         document.querySelector('[aria-label="Close"]').closest('button').click();
     };
+    let alreadyLiked = () => document.querySelector('._aamu._aat0 [aria-label="Unlike"]').isConnected;
     let likeAndNext = () => {
         like();
-        setTimeout(function () {
-            if (document.querySelector('._aamu._aat0 [aria-label="Unlike"]')) {
+        setTimeout(() => {
+            if (alreadyLiked()) {
                 try {
                     next();
                 } catch {
