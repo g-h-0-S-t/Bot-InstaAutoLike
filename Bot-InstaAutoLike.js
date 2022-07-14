@@ -37,19 +37,17 @@ javascript:
         }
     };
     let close = () => {
-        document.querySelector('[aria-label="Close"]').closest('button').click();
+        if (document.querySelector('[aria-label="Close"]') && !document.querySelector('[aria-label="Next"]')) {
+            document.querySelector('[aria-label="Close"]').closest('div').click();
+        }
     };
     let alreadyLiked = () => document.querySelector('._aamu._aat0 [aria-label="Unlike"]');
     let likeAndNext = () => {
         like();
         setTimeout(() => {
             if (alreadyLiked()) {
-                try {
-                    next();
-                } catch {
-                    close();
-                }
-
+                next();
+                close();
             } else {
                 like();
             }
