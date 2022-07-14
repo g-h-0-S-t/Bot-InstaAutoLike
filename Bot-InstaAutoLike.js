@@ -32,14 +32,14 @@ javascript:
         }
     };
     let next = () => {
-        if (document.querySelectorAll('[aria-label="Next"]')[1]) {
-            document.querySelectorAll('[aria-label="Next"]')[1].closest('button').click();
+        if (document.querySelector('[aria-label="Next"]')) {
+            document.querySelector('[aria-label="Next"]').closest('button').click();
         }
     };
     let close = () => {
         document.querySelector('[aria-label="Close"]').closest('button').click();
     };
-    let alreadyLiked = () => document.querySelector('._aamu._aat0 [aria-label="Unlike"]').isConnected;
+    let alreadyLiked = () => document.querySelector('._aamu._aat0 [aria-label="Unlike"]');
     let likeAndNext = () => {
         like();
         setTimeout(() => {
