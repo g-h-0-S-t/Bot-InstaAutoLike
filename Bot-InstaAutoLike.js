@@ -43,7 +43,7 @@ javascript:
             window.location.href = href + '#';
         }
     };
-    let alreadyLiked = () => document.querySelector('._aamu._aat0 [aria-label="Unlike"]');
+    let alreadyLiked = () => document.querySelector('section [aria-label="Unlike"]');
     let likeAndNext = () => {
         like();
         setTimeout(() => {
