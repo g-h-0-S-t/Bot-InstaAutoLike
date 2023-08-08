@@ -27,8 +27,8 @@ javascript:
 (() => {
     document.querySelector('._aagw').click();
     let like = () => {
-        if (document.querySelectorAll('._aamu._ae3_._ae47._ae48 > ._aamw > [role="button"]')[0]) {
-            document.querySelectorAll('._aamu._ae3_._ae47._ae48 > ._aamw > [role="button"]')[0].click();
+        if (document.querySelectorAll('._aamu._ae3_._ae47._ae48 > ._aamw [aria-label="Like"]')[0]) {
+            document.querySelectorAll('._aamu._ae3_._ae47._ae48 > ._aamw [aria-label="Like"]')[0].closest('div[role="button"]').click();
         }
     };
     let next = () => {
@@ -43,7 +43,7 @@ javascript:
             window.location.href = href + '#';
         }
     };
-    let alreadyLiked = () => document.querySelector('section [aria-label="Unlike"]');
+    let alreadyLiked = () => document.querySelector('._aamu._ae3_._ae47._ae48 > ._aamw [aria-label="Unlike"]');
     let likeAndNext = () => {
         like();
         setTimeout(() => {
