@@ -27,8 +27,8 @@ javascript:
 (() => {
     document.querySelector('._aagw').click();
     let like = () => {
-        if (document.querySelectorAll('section [aria-label="Like"]')[1]) {
-            document.querySelectorAll('section [aria-label="Like"]')[1].closest('button').click();
+        if (document.querySelectorAll('._aamu._ae3_._ae47._ae48 > ._aamw > [role="button"]')[0]) {
+            document.querySelectorAll('._aamu._ae3_._ae47._ae48 > ._aamw > [role="button"]')[0].click();
         }
     };
     let next = () => {
