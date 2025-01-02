@@ -36,17 +36,17 @@ javascript: "use strict";
     const goNextOrClose = async () => {
         await wait(500);
         const next = findElement(
-            "[id^='mount_'] > div > div > div.x1n2onr6.x1vjfegm > div > div > div.x78zum5.xdt5ytf.xg6iff7.x1n2onr6.x1ja2u2z > div > div.x6s0dn4.x78zum5.x5yr21d.xl56j7k.x1n2onr6.xh8yej3 > div.x78zum5.xdt5ytf.xch40qd.x1qughib.x10l6tqk.x1nc75zl.xexlgce > div:nth-child(2)"
+            "body > div.x14dbnvc.x67yw2k.x1f1tace.x1xb1xrg.xz3gdfk.xbi9o00.x1dbek64.x4666fc.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div > div > div:nth-child(1) > div > div > div > button"
         );
         const close = findElement(
-            "[id^='mount_'] > div > div > div.x1n2onr6.x1vjfegm > div > div > div.x78zum5.xdt5ytf.xg6iff7.x1n2onr6.x1ja2u2z > div > div.x6s0dn4.x78zum5.x5yr21d.xl56j7k.x1n2onr6.xh8yej3 > div.x10l6tqk.x1nc75zl.xi3dyvs.x1mywscw > div"
+            "body > div.x14dbnvc.x67yw2k.x1f1tace.x1xb1xrg.xz3gdfk.xbi9o00.x1dbek64.x4666fc.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x160vmok.x10l6tqk.x1eu8d0j.x1vjfegm > div > div"
         );
         clickElement(next || close);
     };
     const like = async () => {
         await wait(500);
         const addHeart = findElement(
-            "[id ^= 'mount_'] > div > div > div.x1n2onr6.x1vjfegm > div > div > div.x78zum5.xdt5ytf.xg6iff7.x1n2onr6.x1ja2u2z > div > div.x6s0dn4.x78zum5.x5yr21d.xl56j7k.x1n2onr6.xh8yej3 > div.x1y0lptx.x78zum5.xcdomlo.xdt5ytf.x10l6tqk.x100vrsf > div.html-div.xe8uvvx.xdj266r.x11i5rnm.x1mh8g0r.xexx8yu.x4uap5.x18d9i69.xkhd6sd.x6s0dn4.x1ypdohk.x78zum5.xdt5ytf.xieb3on > span > div"
+            "body > div.x14dbnvc.x67yw2k.x1f1tace.x1xb1xrg.xz3gdfk.xbi9o00.x1dbek64.x4666fc.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div > div > div.xb88tzc.xw2csxc.x1odjw0f.x5fp0pe.x1qjc9v5.xjbqb8w.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.xr1yuqi.xkrivgy.x4ii5y1.x1gryazu.x15h9jz8.x47corl.xh8yej3.xir0mxb.x1juhsu6 > div > article > div > div.x1qjc9v5.x972fbf.xcfux6l.x1qhh985.xm0m39n.x9f619.x78zum5.xdt5ytf.x1iyjqo2.x5wqa0o.xln7xf2.xk390pu.xdj266r.x11i5rnm.xat24cr.x1mh8g0r.x65f84u.x1vq45kp.xexx8yu.x4uap5.x18d9i69.xkhd6sd.x1n2onr6.x11njtxf > div > div > div.x78zum5.xdt5ytf.x1q2y9iw.x1n2onr6.xh8yej3.x9f619.x1iyjqo2.x18l3tf1.x26u7qi.xy80clv.xexx8yu.x4uap5.x18d9i69.xkhd6sd > section.x78zum5.x1q0g3np.xwib8y2.x1yrsyyn.x1xp8e9x.x13fuv20.x178xt8z.xdj266r.x11i5rnm.xat24cr.x1mh8g0r.xo1ph6p.x1pi30zi.x1swvt13 > span.x1rg5ohu.xp7jhwk > div > div > div"
         );
         const addHeartFlag =
             addHeart && addHeart.querySelector('svg[aria-label="Like"]');
