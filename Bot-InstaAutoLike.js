@@ -36,11 +36,11 @@ javascript: "use strict";
     const goNextOrClose = async () => {
         await wait(500);
         const next = findElement(
-            "body > div.x14dbnvc.x67yw2k.x1f1tace.x1xb1xrg.xz3gdfk.xbi9o00.x1dbek64.x4666fc.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div > div > div:nth-child(1) > div > div > div > button"
-        );
+            "body > div.x14dbnvc.x67yw2k.x1f1tace.x1xb1xrg.xz3gdfk.xbi9o00.x1dbek64.x4666fc.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div > div > div:nth-child(1) > div > div > div._aaqg._aaqh > button > div > span > svg[aria-label='Next']"
+        ).parentNode.parentNode.parentNode;
         const close = findElement(
-            "body > div.x14dbnvc.x67yw2k.x1f1tace.x1xb1xrg.xz3gdfk.xbi9o00.x1dbek64.x4666fc.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x160vmok.x10l6tqk.x1eu8d0j.x1vjfegm > div > div"
-        );
+            "body > div.x14dbnvc.x67yw2k.x1f1tace.x1xb1xrg.xz3gdfk.xbi9o00.x1dbek64.x4666fc.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x160vmok.x10l6tqk.x1eu8d0j.x1vjfegm > div > div > svg[aria-label='Close']"
+        ).parentNode;
         clickElement(next || close);
     };
     const like = async () => {
